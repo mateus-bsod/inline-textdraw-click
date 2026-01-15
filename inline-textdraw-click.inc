@@ -9,12 +9,12 @@
                                                                                                                                                                 
 
     inline-textdraw-click
-         Copyright © 2026 by Mateus Mesquita Lima
+         Copyright Â© 2026 by Mateus Mesquita Lima
 
-    -» Author    	       : Mateus Mesquita Lima / mateus-bsod
-    -» Credits of Includes : Y_Less (YSI) and Burak / Nexor (textdraw-streamer) 
-    -» Release Date	       : 15 Jan 2026
-    -» Description	       : Include
+    -Â» Author    	       : Mateus Mesquita Lima / mateus-bsod
+    -Â» Credits of Includes : Y_Less (YSI) and Burak / Nexor (textdraw-streamer) 
+    -Â» Release Date	       : 15 Jan 2026
+    -Â» Description	       : Include
 
 
 */
@@ -34,6 +34,11 @@
 
 #if !defined _INC_textdraw_streamer
     #error "Please place \"inline-textdraw-click.inc\" below \"textdraw-streamer.inc\"!"
+#endif
+
+#tryinclude <YSI\YSI_Coding\y_inline>
+#if !defined _INC_y_inline
+	#tryinclude <YSI_Coding\y_inline>
 #endif
 
 #tryinclude <YSI\YSI_Coding\y_hooks>
@@ -139,4 +144,5 @@ hook native PlayerTextDrawDestroy(playerid, PlayerText:text)
     __v_ClickPTD[text] = 0x0;
     Indirect_Release(_:__f_ClickPTD[text]);
     return continue(playerid, text);
+
 }
