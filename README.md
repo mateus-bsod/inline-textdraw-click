@@ -1,8 +1,11 @@
 # inline-textdraw-click
 This include serves to minimize the infernal work of constantly using ALS or HOOK to make textdraws clickable.</br>
 There is a version "with [textdraw-streamer](https://github.com/nexquery/samp-textdraw-streamer)" and a version without (default).
+> Both versions (with or without textdraw-streamer) function the same way, meaning there are no additional or fewer features; I included two versions only for compatibility reasons.
 
-> Both versions work the same way; I just included two versions for compatibility reasons.
+> [!IMPORTANT]  
+> It is crucial to use the [YSI library](https://github.com/pawn-lang/YSI-Includes/releases) for Include to work.
+
 
 #### Functions
 ```pawn
